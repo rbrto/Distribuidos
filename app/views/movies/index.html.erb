@@ -1,4 +1,18 @@
-<h4 class="column">Listado Cervezas</h4>
+<!--
+<ul class="left">
+  <li class="has-form">
+    <div class="row collapse">
+      <div class="large-8 small-9 columns">
+        <input type="text" class="radius-ls expand" placeholder="Buscar Cerveza">
+      </div>
+      <div class="large-4 small-3 columns">
+        <a href="#" class=" radius-rs button">Search</a>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
 <div class="column">
   <ul class="movies-grid no-bullet row">
     <% @movies.each do |movie| %>
@@ -18,4 +32,6 @@
       </li>
     <% end %>
   </ul>
-</div>
+</div> -->
+
+    <%= react_component('Container', { movies: @movies, searchPath: search_movies_path },  {prerender: true}) %>

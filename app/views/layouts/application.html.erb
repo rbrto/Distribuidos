@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "MovieStore - Online movies" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "BeerStore - Online Beers" %></title>
     <link rel="shortcut icon" href="<%=asset_path("logo.png")%>" >
 
 
@@ -17,8 +17,6 @@
 
     <%= render "layouts/header"%>
 
-    <%= render "layouts/alerts" %>
-
     <div id="main-content" class="row full-min-height">
       <%= yield %>
     </div>
@@ -26,7 +24,18 @@
     <footer class="row">
       <div class="large-12 columns">
         <hr>
-        <p>Ecommerce -  Distribuidos 2016</p>
+
+        <div class="row position">
+          <div class="title-footer">Ecommerce -  Distribuidos 2016</div>
+          <ul class="zurb-links">
+            <li><%= link_to "Quienes Somos", informations_about_path %></li>
+            <li><%= link_to "Como Comprar", informations_howbuy_path %></li>
+            <li><%= link_to "Nuestas Marcas", informations_brands_path %></li>
+            <li><a href="http://zurb.com/sitemap">Sitemap</a></li>
+          </ul>
+         </div>
+
+
       </div>
     </footer>
 
