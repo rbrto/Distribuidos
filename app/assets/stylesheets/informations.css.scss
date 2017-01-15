@@ -1,0 +1,19 @@
+// Place all the styles related to the informations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.zurb-links{
+  margin: 0;
+  display: inline-block;
+ float: right;
+}
+
+ul.zurb-links li {
+  display: block;
+  float: left;
+  margin-left: 6px;
+  font-family: 'gotham-rounded';
+  font-weight: 500;
+  font-weight: 700;
+  font-size: 14px;
+}

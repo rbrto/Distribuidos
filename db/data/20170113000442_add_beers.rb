@@ -28,6 +28,34 @@ class AddBeers < SeedMigration::Migration
           image: ActionDispatch::Http::UploadedFile.new(tempfile: File.new("#{Rails.root}/db/data/images/266180-NORTH-COAST-RED-SEAL.png"), filename: "image.png")
 
   )
+  Movie.create(
+          title: 'Kross Stout',
+          price: 5000,
+          description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+          image: ActionDispatch::Http::UploadedFile.new(tempfile: File.new("#{Rails.root}/db/data/images/155975-Kross-Stout-330ml.jpg"), filename: "image.jpg")
+
+  )
+  Movie.create(
+          title: 'Delirium Tremens',
+          price: 2500,
+          description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+          image: ActionDispatch::Http::UploadedFile.new(tempfile: File.new("#{Rails.root}/db/data/images/157218-Delirium-Tremens-330ml.jpg"), filename: "image.jpg")
+
+  )
+  Movie.create(
+          title: 'Ballast Point',
+          price: 1000,
+          description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+          image: ActionDispatch::Http::UploadedFile.new(tempfile: File.new("#{Rails.root}/db/data/images/265823-BP-DORADO.png"), filename: "image.png")
+
+  )
+  Movie.create(
+          title: 'Kross Maibock',
+          price: 2000,
+          description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+          image: ActionDispatch::Http::UploadedFile.new(tempfile: File.new("#{Rails.root}/db/data/images/155942-Kross-Maibock-330ml.jpg"), filename: "image.jpg")
+
+  )
 end
 
   def down

@@ -7,9 +7,11 @@ const MovieList = (props) => {
   });
 
   return (
-    <ul className="movies-grid no-bullet row">
-      {moviesItems}
-    </ul>
+    <div className="column beer-top">
+      <ul className="movies-grid no-bullet row">
+        {moviesItems}
+      </ul>
+   </div>
   );
 };
 

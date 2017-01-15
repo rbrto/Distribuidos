@@ -11,7 +11,7 @@ class Search extends React.Component {
   render () {
       return (
         <div className="column">
-          <div className="large-8 small-9 columns">
+          <div className="large-7 large-offset-3  columns">
             <input type="text" className="radius-ls expand" onChange={ (event) => this.onInputChange(event.target.value)} placeholder="Buscar Cerveza"/>
           </div>
         </div>

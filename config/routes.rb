@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  get 'carts/show'
 
+  namespace :informations do
+    get 'about'
+    get 'howbuy'
+    get 'brands'
+  end
+
+  resources :information, only: [:about, :howbuy]
 
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   resources :movies, only: [:show, :index] do
@@ -17,6 +23,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'movies#index'
+  get 'carts/show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
