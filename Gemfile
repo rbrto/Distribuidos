@@ -30,6 +30,10 @@ gem 'spring', group: :development
 gem "react-rails", :git => "git@github.com:reactjs/react-rails.git", :branch => 'master'
 gem "byebug"
 
+# Payments
+gem 'braintree', '~> 2.33.1'
+gem 'figaro', '~> 0.7.0' # Environment variables
+gem 'gon', '~> 5.1.2' # Passing Rails variables to JS
 
 gem 'seed_migration'
 gem 'carrierwave', '~> 0.10.0'
